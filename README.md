@@ -1,51 +1,31 @@
-# First Level Heading
+# 🎯 Jogo de Adivinhação - Qt + C++
 
-Paragraph.
+Este é um pequeno projeto de um jogo de adivinhação com interface gráfica, desenvolvido com **Qt Creator** e **C++**, ideal para fins de aprendizado sobre:
 
-## Second Level Heading
-
-Paragraph.
-
-- bullet
-+ other bullet
-* another bullet
-    * child bullet
-
-1. ordered
-2. next ordered
-
-### Third Level Heading
-
-Some *italic* and **bold** text and `inline code`.
-
-An empty line starts a new paragraph.
-
-Use two spaces at the end  
-to force a line break.
-
-A horizontal ruler follows:
+- Lógica condicional com C++
+- Interface gráfica com Qt (widgets, sinais e slots)
+- Uso de números aleatórios com o Random
 
 ---
 
-Add links inline like [this link to the Qt homepage](https://www.qt.io),
-or with a reference like [this other link to the Qt homepage][1].
+## 📸 Interface
 
-    Add code blocks with
-    four spaces at the front.
+O jogo possui uma interface gráfica com os seguintes elementos:
 
-> A blockquote
-> starts with >
->
-> and has the same paragraph rules as normal text.
+- `QLineEdit`: Onde o usuário digita seu palpite
+- `QPushButton`: Um botão para enviar o palpite ou reiniciar o jogo
+- `QLabel`: Exibe mensagens de feedback como “Muito alto”, “Muito baixo” ou “Acertou!”
+- `QMessageBox`: Utilizado para avisar o usuário quando a entrada não é válida
 
-First Level Heading in Alternate Style
-======================================
+---
 
-Paragraph.
+## ⚙️ Funcionalidades
 
-Second Level Heading in Alternate Style
----------------------------------------
+- Ao iniciar o programa, o sistema gera um número secreto aleatório entre 1 e 100
+- O usuário digita um número e clica em **"Tentar"**
+  - Se o número digitado estiver acima do número secreto → exibe “Muito alto!”
+  - Se o número digitado estiver abaixo do número secreto → exibe “Muito baixo!”
+  - Se acertar → exibe “Acertou!” e o botão vira **"Recomeçar"**
+- Clicando em **"Recomeçar"**, um novo número secreto é gerado
 
-Paragraph.
-
-[1]: https://www.qt.io
+---
